@@ -16,3 +16,8 @@ The Technical Solution: I navigated to Project Settings > Request types to bridg
 The Mapping: I implemented a new "Walk-In Repair" Request Type and mapped it directly to the GPU-Repair Work Item Type.
 
 Key Achievement: This configuration successfully created a functional Service Catalog, demonstrating the ability to align complex technical workflows with simplified, user-facing service portals.
+### 💎 Data Integrity & Custom Field Logic
+* **The Problem**: The initial **Affected hardware** field was configured as a "Short Text" type, which allowed for inconsistent data entry (e.g., "NZXT AIO" vs "AIO cooler"). This lack of standardization prevents accurate reporting and lifecycle tracking.
+* **The Technical Solution**: I transitioned the field to a **Select List (single choice)** and configured a **Configuration Scheme Context**.
+* **The Implementation**: By restricting this context specifically to the **FALE IT Help Desk** project, I ensured that hardware-specific options like **"NZXT AIO"** are only surfaced where relevant, maintaining a clean and efficient UI for lab intake.
+* **Key Achievement**: This demonstrates **Data Standardization**, ensuring that serialized assets (e.g., **S/N: C0538241216101332**) are categorized correctly for long-term reliability analytics.
