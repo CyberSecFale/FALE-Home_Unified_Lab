@@ -34,3 +34,39 @@ Structural Engineering: Identified and replaced missing backplate chassis hardwa
 System Upgrade: Integrated an NZXT AIO liquid cooling system, stabilizing CPU idle temperatures at 32°C.
 
 Data-Driven Validation: Conducted 30-minute stress tests and 4K benchmarks (Metro Exodus, Shadow of the Tomb Raider) to verify thermal stability under a peak power draw of 557W.
+___
+
+### 🐺 Wolfcore Identity Lab: Pillar 3
+Hybrid Cloud & On-Premises Identity Infrastructure
+
+🏗️ Project Overview
+This repository contains the Infrastructure-as-Code (IaC) used to deploy a production-grade Active Directory forest (lab.local) within a hybrid-ready home lab environment. The project demonstrates advanced Windows systems engineering, remote management security, and virtualization architecture.
+
+🛠️ Phase 1 Technical Achievements: Staging & Bridge Security
+The initial phase focused on establishing a secure "Management Bridge" and preparing the virtualization host for deployment.
+
+🔑 Core Competencies Demonstrated:
+Remote Management Engineering: Configured WinRM (WS-Man) over a local workgroup bridge, remediating NTLM handshake failures through explicit credential synchronization and LocalAccountTokenFilterPolicy registry overrides.
+
+Virtualization Architecture: Transformed a Windows Client OS into a Type-1 Hypervisor (Hyper-V), enabling nested virtualization capabilities to support a Windows Server 2022 guest environment.
+
+DevOps Workflow Integration: Synchronized technical execution with Jira (FIHD-16) for task traceability and GitHub for version-controlled script management.
+
+Advanced PowerShell Scripting: Developed custom scripts for remote file acquisition, utilizing New-PSSession streams and Copy-Item -ToSession to bypass browser-based download security blocks on headless servers.
+
+📁 Repository Structure
+/scripts/provisioning/: PowerShell scripts for VM lifecycle management (Switch creation, VHDX sizing, OS hydration).
+
+/configs/: Configuration files for the Active Directory Forest and DNS zones.
+
+/reports/: Phase-specific deployment logs and Jira audit trails.
+
+🚀 Current Project Status
+[x] Phase 1: Environment Staging & ISO Acquisition 
+## **Resolved WinRM 'Access Denied' errors by implementing the LocalAccountTokenFilterPolicy registry override on Target 2.**
+
+[ ] Phase 2: Compute Provisioning (Hyper-V VM Shell & Virtual Switching)
+
+[ ] Phase 3: Active Directory Domain Services (AD DS) Deployment
+
+[ ] Phase 4: Group Policy & Security Hardening
