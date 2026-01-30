@@ -65,8 +65,24 @@ Advanced PowerShell Scripting: Developed custom scripts for remote file acquisit
 [x] Phase 1: Environment Staging & ISO Acquisition 
 ## **Resolved WinRM 'Access Denied' errors by implementing the LocalAccountTokenFilterPolicy registry override on Target 2.**
 
-[ ] Phase 2: Compute Provisioning (Hyper-V VM Shell & Virtual Switching)
+[X] Phase 2: Compute Provisioning (Hyper-V VM Shell & Virtual Switching)
 
 [ ] Phase 3: Active Directory Domain Services (AD DS) Deployment
 
 [ ] Phase 4: Group Policy & Security Hardening
+
+## 🏗️ Phase 2: Compute Provisioning
+*Status: [x] In-Progress*
+
+🚀 **Step 1: Network Bridge Established**
+Created an External Virtual Switch (`Wolfcore_External_Switch`) on Target 2, bridging the physical network adapter to the Hyper-V stack. Verified IP integrity and management OS connectivity.
+
+🖥️ **Step 2: Wolfcore-DC01 Shell Provisioned**
+Successfully provisioned the primary Domain Controller VM shell with the following specifications:
+* **Generation**: 2 (UEFI)
+* **RAM**: 4GB 
+* **Storage**: 60GB Dynamic VHDX
+* **Boot Media**: Windows Server 2022 Evaluation ISO
+* **Networking**: Attached to Wolfcore_External_Switch
+
+📌 **Next Milestone**: OS Hydration and Domain Controller Promotion.
