@@ -86,3 +86,6 @@ Successfully provisioned the primary Domain Controller VM shell with the followi
 * **Networking**: Attached to Wolfcore_External_Switch
 
 📌 **Next Milestone**: OS Hydration and Domain Controller Promotion.
+
+🚀 **Step 3: OS Hydration (In-Progress)**
+Successfully triggered the UEFI boot sequence and initiated the Windows Server 2022 Standard (Desktop Experience) installation wizard. Custom partitioning applied to the 60GB virtual disk.
