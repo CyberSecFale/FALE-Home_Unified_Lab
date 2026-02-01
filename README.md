@@ -1,26 +1,31 @@
-﻿Wolfcore Identity Lab Progress
-Step 5: Active Directory Forest Promotion in progress.
-Phase 5: Active Directory Forest 'wolfcore.local' promotion initiated.
-Step 5 COMPLETE: Forest 'wolfcore.local' is live. System rebooting as Domain Controller.
-Automation Live: PowerShell is now successfully communicating with GitHub and Jira FIHD-16.
-Fixing GitHub sync by ignoring large ISO files. Jira connection verified.
-ISO history scrubbed. GitHub sync should now be clear.
-Fresh start: DevOps pipeline fully operational with ISO history scrubbed.
-DevOps Pipeline Reset: History scrubbed and connection verified.
-Pre-Promotion Sync: DevOps pipeline verified. GitHub history scrubbed (1.7KB push). Jira ticket FIHD-16 synchronized. Ready for DC Promotion.
-DevOps Pipeline Active: Infrastructure verified and scrubbed. Starting Forest Promotion.
-Final Phase 3 Sync: Wolfcore.local forest is LIVE. All services (ADWS, DNS, KDC, Netlogon) verified RUNNING. Closing ticket FIHD-16.
+﻿# WOLFCORE IDENTITY LAB: UNIFIED CYBERSECURITY & SYSTEMS ENGINEERING
 
-## Pillar 4: Group Policy & Security Hardening [COMPLETED]
-The endpoint protection phase successfully established an enterprise security baseline across the forest.
+##  CURRENT PROJECT STATUS
+- [x] Phase 1: Environment Staging & ISO Acquisition
+- [x] Phase 2: Compute Provisioning (Hyper-V VM Shell)
+- [x] Phase 3: Active Directory Domain Services (AD DS)
+- [x] Phase 4: Group Policy & Security Hardening
 
+---
+
+##  PILLAR 4: ENTERPRISE SECURITY BASELINE (FINALIZED)
 | Security Control | Implementation Method | Status |
 | :--- | :--- | :--- |
-| **Central Store** | ADMX/ADML Sync to SYSVOL | Verified |
-| **AV Protection** | Windows Defender Hardening GPO | Enforced |
-| **ASR Rules** | Attack Surface Reduction (ASR) GPO | Enforced |
-| **Host Firewall** | WFAS Hardening (Inbound Block) | Enforced |
-| **Deep Auditing** | Process Creation (CmdLine) Logging | Active |
-| **Identity Guard** | LSASS Credential Guard (VBS) | Active |
+| **Central Store** | ADMX/ADML Sync to SYSVOL | Verified  |
+| **AV Protection** | Windows Defender Hardening GPO | Enforced  |
+| **ASR Rules** | Attack Surface Reduction (ASR) GPO | Enforced  |
+| **Host Firewall** | WFAS Hardening (Inbound Block) | Enforced  |
+| **Deep Auditing** | Process Creation (CmdLine) Logging | Active  |
+| **Identity Guard** | LSASS Credential Guard (VBS) | Active  |
 
-> **Note:** Forensic visibility is now active via Event ID 4688 with command-line argument capture.
+---
+
+##  HISTORICAL PHASES (ARCHIVE)
+
+### Phase 1 & 2: Infrastructure Staging
+* **WinRM Remediation**: Overcame NTLM handshake failures via LocalAccountTokenFilterPolicy.
+* **Hyper-V Architecture**: Deployed Type-1 Hypervisor on Target 2 with External Virtual Switching.
+
+### Phase 3: Identity Infrastructure
+* **Forest Promotion**: Successfully promoted 'wolfcore.local' with ADWS, DNS, and KDC operational.
+* **DevOps Sync**: Established automated status reporting to GitHub and Jira.
